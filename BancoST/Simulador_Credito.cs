@@ -45,12 +45,6 @@ namespace BancoST
                 }
                 else
                 {
-                    if (cuotas < 1 || cuotas > 36)
-                    {
-                        MessageBox.Show("La cantidad de cuotas deben estar entre 1 y 36", "Alerta", MessageBoxButtons.OK);
-                    }
-                    else
-                    {
                         if (cuotas >= 1 && cuotas <= 12)
                         {
                             interes = 0.1;
@@ -79,7 +73,7 @@ namespace BancoST
                             txtMontoTotal.Text = total.ToString();
                             txtValorCuotas.Text = valor_cuotas.ToString();
                         }
-                    }
+                    
                 }
             }
             catch (Exception ex)
