@@ -15,6 +15,11 @@ namespace BancoST
         public Simulador_Credito()
         {
             InitializeComponent();
+
+            for (int i = 1; i <= 36; i++)
+            {
+                cbCuotas.Items.Add(i);
+            }
         }
 
         private void Simulador_Credito_Load(object sender, EventArgs e)
@@ -28,7 +33,7 @@ namespace BancoST
             {
                 double interes, total, valor_cuotas;
                 double monto = double.Parse(txtMonto.Text);
-                int cuotas = int.Parse(txtCuotas.Text);
+                int cuotas = int.Parse(cbCuotas.Text);
 
                 if (monto < 0)
                 {

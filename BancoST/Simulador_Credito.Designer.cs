@@ -37,13 +37,13 @@ namespace BancoST
             this.label4 = new System.Windows.Forms.Label();
             this.txtMonto = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtCuotas = new System.Windows.Forms.TextBox();
             this.btnIniciar = new System.Windows.Forms.Button();
             this.txtMontoTotal = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtValorCuotas = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.cbCuotas = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -129,15 +129,6 @@ namespace BancoST
             this.label5.TabIndex = 8;
             this.label5.Text = "Cantidad Cuotas";
             // 
-            // txtCuotas
-            // 
-            this.txtCuotas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCuotas.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.txtCuotas.Location = new System.Drawing.Point(46, 380);
-            this.txtCuotas.Name = "txtCuotas";
-            this.txtCuotas.Size = new System.Drawing.Size(197, 29);
-            this.txtCuotas.TabIndex = 7;
-            // 
             // btnIniciar
             // 
             this.btnIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -203,12 +194,23 @@ namespace BancoST
             this.label8.TabIndex = 14;
             this.label8.Text = "Resultado:";
             // 
+            // cbCuotas
+            // 
+            this.cbCuotas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCuotas.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.cbCuotas.FormattingEnabled = true;
+            this.cbCuotas.Location = new System.Drawing.Point(46, 388);
+            this.cbCuotas.Name = "cbCuotas";
+            this.cbCuotas.Size = new System.Drawing.Size(197, 32);
+            this.cbCuotas.TabIndex = 15;
+            // 
             // Simulador_Credito
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(566, 489);
+            this.Controls.Add(this.cbCuotas);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtValorCuotas);
@@ -216,7 +218,6 @@ namespace BancoST
             this.Controls.Add(this.txtMontoTotal);
             this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtCuotas);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtMonto);
             this.Controls.Add(this.label3);
@@ -244,13 +245,13 @@ namespace BancoST
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtMonto;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtCuotas;
         private System.Windows.Forms.Button btnIniciar;
         private System.Windows.Forms.TextBox txtMontoTotal;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtValorCuotas;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox cbCuotas;
     }
 }
 
