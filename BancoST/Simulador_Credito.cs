@@ -15,16 +15,14 @@ namespace BancoST
         public Simulador_Credito()
         {
             InitializeComponent();
-
-            for (int i = 1; i <= 36; i++)
-            {
-                cbCuotas.Items.Add(i);
-            }
         }
 
         private void Simulador_Credito_Load(object sender, EventArgs e)
         {
-
+            for (int i = 1; i <= 36; i++)
+            {
+                cbCuotas.Items.Add(i);
+            }
         }
 
         private void btnIniciar_Click(object sender, EventArgs e)
@@ -81,6 +79,11 @@ namespace BancoST
                 MessageBox.Show("Verifique que haya ingresado los datos correctos en los campos.", "Alerta", MessageBoxButtons.OK);
             }
             
+
+        }
+
+        private void cbCuotas_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

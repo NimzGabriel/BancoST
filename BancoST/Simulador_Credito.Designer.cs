@@ -133,7 +133,7 @@ namespace BancoST
             // 
             this.btnIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciar.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.btnIniciar.Location = new System.Drawing.Point(320, 374);
+            this.btnIniciar.Location = new System.Drawing.Point(320, 385);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(82, 35);
             this.btnIniciar.TabIndex = 9;
@@ -146,7 +146,7 @@ namespace BancoST
             this.txtMontoTotal.Enabled = false;
             this.txtMontoTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMontoTotal.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.txtMontoTotal.Location = new System.Drawing.Point(320, 225);
+            this.txtMontoTotal.Location = new System.Drawing.Point(304, 225);
             this.txtMontoTotal.Name = "txtMontoTotal";
             this.txtMontoTotal.Size = new System.Drawing.Size(197, 29);
             this.txtMontoTotal.TabIndex = 10;
@@ -156,7 +156,7 @@ namespace BancoST
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label6.Location = new System.Drawing.Point(352, 198);
+            this.label6.Location = new System.Drawing.Point(336, 198);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(120, 24);
             this.label6.TabIndex = 11;
@@ -167,7 +167,7 @@ namespace BancoST
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label7.Location = new System.Drawing.Point(341, 274);
+            this.label7.Location = new System.Drawing.Point(325, 274);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(163, 24);
             this.label7.TabIndex = 13;
@@ -178,7 +178,7 @@ namespace BancoST
             this.txtValorCuotas.Enabled = false;
             this.txtValorCuotas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtValorCuotas.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.txtValorCuotas.Location = new System.Drawing.Point(320, 301);
+            this.txtValorCuotas.Location = new System.Drawing.Point(304, 301);
             this.txtValorCuotas.Name = "txtValorCuotas";
             this.txtValorCuotas.Size = new System.Drawing.Size(197, 29);
             this.txtValorCuotas.TabIndex = 12;
@@ -196,6 +196,7 @@ namespace BancoST
             // 
             // cbCuotas
             // 
+            this.cbCuotas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCuotas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCuotas.ForeColor = System.Drawing.Color.DodgerBlue;
             this.cbCuotas.FormattingEnabled = true;
@@ -203,13 +204,14 @@ namespace BancoST
             this.cbCuotas.Name = "cbCuotas";
             this.cbCuotas.Size = new System.Drawing.Size(197, 32);
             this.cbCuotas.TabIndex = 15;
+            this.cbCuotas.SelectedIndexChanged += new System.EventHandler(this.cbCuotas_SelectedIndexChanged);
             // 
             // Simulador_Credito
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(566, 489);
+            this.ClientSize = new System.Drawing.Size(562, 484);
             this.Controls.Add(this.cbCuotas);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
